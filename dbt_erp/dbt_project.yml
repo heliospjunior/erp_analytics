@@ -1,0 +1,30 @@
+name: dbt_erp
+
+profile: dbt_erp
+
+seed-paths: ["seeds"]
+model-paths: ["models"]
+macro-paths: ["macros"]
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+seeds:
+  # Builds seeds into '<your_schema_name>_raw'
+  dbt_erp:
+    +schema: raw
+
+models:
+  dbt_erp:
+    # Materialize staging models as views, and marts as tables
+    staging:
+      +schema: staging
+      +materialized: view
+    marts:
+      +schema: marts
+      +materialized: table
+
+snapshots:
+  dbt_erp:
+    +schema: snapshots
+

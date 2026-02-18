@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: fct_inventory_replenishment
+    description: "Sugestão de reposição de estoque por loja e produto"
+
+    columns:
+      - name: store_id
+        tests: 
+          - not_null
+      
+      - name: product_id
+        tests: 
+          - not_null
+      
+      - name: snapshot_date
+        tests: 
+          - not_null
+
+      - name: suggested_replenish_qty
+        tests: 
+          - not_null
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: ">= 0"
+      
+      - name: avg_daily_consumption_7d
+        tests: 
+          - not_null
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: ">= 0"

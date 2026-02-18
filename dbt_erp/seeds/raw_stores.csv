@@ -1,0 +1,6 @@
+store_id,store_name,city,state,opened_at
+1,Loja Centro,Sao Paulo,SP,2022-01-10
+2,Loja Norte,Rio de Janeiro,RJ,2022-03-15
+3,Loja Sul,Curitiba,PR,2022-05-20
+4,Loja Leste,Belo Horizonte,MG,2022-07-01
+5,Loja Oeste,Campinas,SP,2022-09-12
