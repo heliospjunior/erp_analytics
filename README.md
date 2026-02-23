@@ -57,10 +57,42 @@ Grão:
 
 ## 📸 Imagens de Exemplos 
 
-- [Ranking de produtos mais críticos](https://github.com/heliospjunior/erp_analytics/blob/main/images/produtos%20com%20maior%20risco%20de%20rupturas.jpg)
-- [Impacto financeiro potencial da ruptura](https://github.com/heliospjunior/erp_analytics/blob/main/images/impacto%20financeiro%20potencial%20de%20ruptura.jpg)
-- [Lojas com maior exposição a risco](https://github.com/heliospjunior/erp_analytics/blob/main/images/ranking%20de%20lojas%20com%20maior%20risco%20de%20ruptura.jpg)
-- [Simulação de reposição inteligente](https://github.com/heliospjunior/erp_analytics/blob/main/images/quanto%20repor%20para%207%20dias%20de%20cobertura.jpg)
+- Ranking de produtos com menor cobertura de estoque.
+
+Aqui priorizo itens com menor days_of_stock, identificando quais produtos tendem a entrar em ruptura primeiro.
+Essa análise permite que o time de operações atue preventivamente, direcionando reposição para os itens mais críticos antes que a ruptura aconteça.
+Insight: Nem sempre o menor estoque absoluto é o maior risco — o consumo médio muda completamente a prioridade.
+
+ [Ranking de produtos mais críticos](https://github.com/heliospjunior/erp_analytics/blob/main/images/produtos%20com%20maior%20risco%20de%20rupturas.jpg)  
+
+ 
+- Estimativa de receita diária em risco.
+
+Cruzo consumo médio com preço médio para estimar o impacto financeiro caso o produto entre em ruptura.
+Essa análise transforma um problema operacional (falta de estoque) em um indicador estratégico de receita.
+Priorizar produtos de maior impacto financeiro pode gerar decisões mais inteligentes do que olhar apenas volume.
+
+ [Impacto financeiro potencial da ruptura](https://github.com/heliospjunior/erp_analytics/blob/main/images/impacto%20financeiro%20potencial%20de%20ruptura.jpg)    
+ 
+
+- Exposição a risco por loja.
+
+Nesta visão agrego o número de produtos em risco por loja, permitindo identificar unidades com maior vulnerabilidade operacional.
+Esse tipo de análise apoia decisões como redistribuição de estoque ou revisão de políticas de reposição.
+Insight: Risco de ruptura pode ser um problema sistêmico ou localizado — aqui conseguimos enxergar a diferença.
+
+ [Lojas com maior exposição a risco](https://github.com/heliospjunior/erp_analytics/blob/main/images/ranking%20de%20lojas%20com%20maior%20risco%20de%20ruptura.jpg)    
+ 
+
+- Simulação de reposição para 7 dias de cobertura.
+
+Com base no consumo médio móvel, calculo o estoque ideal para garantir 7 dias de operação e estimo a quantidade necessária de reposição.
+Essa simulação permite sair do diagnóstico e partir para a ação.
+Deixar de apenas identificar risco e passar a sugerir decisão é o que transforma análise em valor de negócio.
+
+ [Simulação de reposição inteligente](https://github.com/heliospjunior/erp_analytics/blob/main/images/quanto%20repor%20para%207%20dias%20de%20cobertura.jpg)     
+ 
+
 
   
 ## 🛠 Tecnologias Utilizadas
