@@ -55,6 +55,14 @@ Grão:
 
 ---
 
+## 📸 Imagens de Exemplos 
+
+- [Ranking de produtos mais críticos](https://github.com/heliospjunior/erp_analytics/blob/main/images/produtos%20com%20maior%20risco%20de%20rupturas.jpg)
+- [Impacto financeiro potencial da ruptura](https://github.com/heliospjunior/erp_analytics/blob/main/images/impacto%20financeiro%20potencial%20de%20ruptura.jpg)
+- [Lojas com maior exposição a risco](https://github.com/heliospjunior/erp_analytics/blob/main/images/ranking%20de%20lojas%20com%20maior%20risco%20de%20ruptura.jpg)
+- [Simulação de reposição inteligente](https://github.com/heliospjunior/erp_analytics/blob/main/images/quanto%20repor%20para%207%20dias%20de%20cobertura.jpg)
+
+  
 ## 🛠 Tecnologias Utilizadas
 
 - dbt
@@ -140,6 +148,15 @@ Grain:
 - Potential financial impact of stockouts
 - Stores with highest exposure
 - Intelligent replenishment simulation
+
+---
+## 📸 Example Outputs 
+
+- [Most critical products ranking](https://github.com/heliospjunior/erp_analytics/blob/main/images/produtos%20com%20maior%20risco%20de%20rupturas.jpg)
+- [Potential financial impact of stockouts](https://github.com/heliospjunior/erp_analytics/blob/main/images/impacto%20financeiro%20potencial%20de%20ruptura.jpg)
+- [Stores with highest exposure](https://github.com/heliospjunior/erp_analytics/blob/main/images/ranking%20de%20lojas%20com%20maior%20risco%20de%20ruptura.jpg)
+- [Intelligent replenishment simulation](https://github.com/heliospjunior/erp_analytics/blob/main/images/quanto%20repor%20para%207%20dias%20de%20cobertura.jpg)
+
 
 ---
 
