@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: fct_inventory_daily
+    description: "Fato diária de estoque por loja e produto"
+
+    columns: 
+      - name: store_id
+        tests: 
+        - not_null
+        - relationships:
+            arguments:
+              to: ref('stg_stores')
+              field: store_id
+      
+      - name: product_id
+        tests: 
+        - not_null
+        - relationships:
+              arguments:
+                to: ref('stg_products')
+                field: product_id
+
+      - name: snapshot_date
+        tests: 
+        - not_null
+
+      - name: stock_quantity
+        tests: 
+        - not_null
+
+
+
+
+

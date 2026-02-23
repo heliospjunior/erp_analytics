@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: fct_inventory_risk
+    description: "Fato de risco de ruptura de estoque por loja e produto"
+
+    columns:
+      - name: store_id
+        tests:
+          - not_null
+
+      - name: product_id
+        tests:
+          - not_null
+
+      - name: snapshot_date
+        tests:
+          - not_null
+
+      - name: avg_daily_consumption_7d
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: ">= 0"
+
+      - name: days_of_stock
+        tests:
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: "is null or days_of_stock >= 0"
+     
+    tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "not (is_stockout_risk = true and days_of_stock > 3 )"
+                   

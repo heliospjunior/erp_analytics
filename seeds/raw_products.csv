@@ -1,0 +1,51 @@
+product_id,product_name,category,brand,unit_cost,unit_price,created_at
+1,Arroz Branco 5kg,Mercearia,SaborSul,19.90,27.90,2023-01-10
+2,Feijão Carioca 1kg,Mercearia,SaborSul,7.50,11.90,2023-01-10
+3,Açúcar Refinado 1kg,Mercearia,DoceVida,4.20,6.90,2023-01-12
+4,Café Torrado 500g,Mercearia,CaféBom,9.80,15.90,2023-01-12
+5,Macarrão Espaguete,Mercearia,BoaMassa,3.10,5.50,2023-01-15
+6,Óleo de Soja 900ml,Mercearia,CoziBem,5.90,8.90,2023-01-15
+7,Sal Refinado 1kg,Mercearia,SalMar,1.20,2.50,2023-01-18
+8,Leite Integral 1L,Laticínios,VacaFeliz,4.20,6.50,2023-01-18
+9,Iogurte Natural,Laticínios,VacaFeliz,2.10,3.90,2023-01-20
+10,Manteiga 200g,Laticínios,CampoReal,6.90,10.90,2023-01-20
+11,Queijo Mussarela 300g,Laticínios,CampoReal,11.50,17.90,2023-01-22
+12,Refrigerante Cola 2L,Bebidas,RefriMax,6.80,9.90,2023-01-22
+13,Água Mineral 1.5L,Bebidas,RefriMax,2.50,3.90,2023-01-25
+14,Cerveja Pilsen Lata,Bebidas,CervaBoa,3.80,5.90,2023-01-25
+15,Suco de Laranja 1L,Bebidas,FrutaPura,4.90,7.90,2023-01-28
+16,Detergente Líquido,Limpeza,LimpaJá,1.90,3.50,2023-02-01
+17,Sabão em Pó 1kg,Limpeza,LimpaJá,7.90,12.90,2023-02-01
+18,Amaciante 2L,Limpeza,Maciez,6.50,10.90,2023-02-03
+19,Desinfetante 1L,Limpeza,Maciez,3.90,6.90,2023-02-03
+20,Papel Higiênico 12un,Limpeza,Conforto,9.50,14.90,2023-02-05
+21,Shampoo 400ml,Higiene,BelezaPura,7.90,12.90,2023-02-07
+22,Condicionador 400ml,Higiene,BelezaPura,8.20,13.90,2023-02-07
+23,Sabonete Barra,Higiene,BelezaPura,1.40,2.90,2023-02-10
+24,Creme Dental,Higiene,Sorriso+,3.20,5.90,2023-02-10
+25,Escova Dental,Higiene,Sorriso+,2.80,4.90,2023-02-12
+26,Frango Congelado 1kg,Congelados,GranjaBoa,9.90,15.90,2023-02-15
+27,Carne Moída 1kg,Congelados,BoiNobre,18.50,27.90,2023-02-15
+28,Linguiça Toscana,Congelados,BoiNobre,12.90,19.90,2023-02-18
+29,Pizza Congelada,Congelados,FornoRápido,11.50,17.90,2023-02-18
+30,Lasanha Congelada,Congelados,FornoRápido,13.90,21.90,2023-02-20
+31,Biscoito Recheado,Mercearia,DoceVida,2.90,5.50,2023-02-22
+32,Biscoito Água e Sal,Mercearia,DoceVida,2.50,4.90,2023-02-22
+33,Achocolatado 400g,Mercearia,ChocoBom,5.90,9.90,2023-02-25
+34,Farinha de Trigo 1kg,Mercearia,BoaMassa,3.20,5.90,2023-02-25
+35,Margarina 500g,Laticínios,CampoReal,4.80,7.90,2023-02-28
+36,Milho Verde Lata,Mercearia,SaborSul,2.10,3.90,2023-03-01
+37,Ervilha Lata,Mercearia,SaborSul,2.10,3.90,2023-03-01
+38,Atum Lata,Mercearia,MarAzul,5.90,9.90,2023-03-03
+39,Água Sanitária,Limpeza,LimpaJá,2.20,3.90,2023-03-03
+40,Esponja de Limpeza,Limpeza,LimpaJá,1.20,2.50,2023-03-05
+41,Desodorante Aerosol,Higiene,BelezaPura,6.90,11.90,2023-03-07
+42,Absorvente,Higiene,Conforto,5.50,9.90,2023-03-07
+43,Guardanapo Papel,Mercearia,Conforto,2.90,4.90,2023-03-10
+44,Arroz Integral 1kg,Mercearia,SaborSul,12.50,18.90,2023-03-10
+45,Granola 500g,Mercearia,VidaLeve,8.90,14.90,2023-03-12
+46,Banana Prata kg,Hortifruti,FrescoBom,2.90,4.90,2023-03-15
+47,Maçã Gala kg,Hortifruti,FrescoBom,3.20,5.50,2023-03-15
+48,Cebola kg,Hortifruti,FrescoBom,2.10,3.90,2023-03-18
+49,Batata kg,Hortifruti,FrescoBom,2.30,4.20,2023-03-18
+50,Tomate kg,Hortifruti,FrescoBom,3.50,6.90,2023-03-20

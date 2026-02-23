@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: stg_sales
+    description: "Vendas normalizadas com enriquecimento de produto"
+    columns:
+      - name: sale_id
+        tests: 
+          - not_null
+          - unique
+        
+      - name: sale_datetime
+        tests: 
+          - not_null
+
+      - name: store_id
+        tests: 
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_stores')
+                field: store_id
+
+      - name: product_id
+        tests: 
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_products')
+                field: product_id
+
+      - name: quantity
+        tests: 
+          - not_null
+
+      - name: total_amount
+        tests: 
+          - not_null
+    

@@ -1,0 +1,92 @@
+version: 2
+
+sources:
+  - name: erp 
+    database: erp-analytics-ae
+    schema: analytics_raw
+    description: "Dados brutos do ERP (camada raw)"
+
+    tables: 
+      - name: raw_products
+        description: "Produtos do ERP"
+        columns: 
+          - name: product_id
+            tests: 
+              - not_null
+              - unique
+          
+          - name: product_name
+            tests:
+              - not_null
+            
+          - name: category
+
+          - name: brand
+
+          - name: unit_cost
+
+          - name: unit_price
+
+          - name: created_at
+
+      - name: raw_sales
+        description: "vendas feitas no erp"
+        columns:
+          - name: sale_id
+            tests: 
+              - not_null
+              - unique
+            
+          - name: sale_datetime
+            tests: 
+              - not_null
+
+          - name: store_id
+            tests: 
+              - not_null
+
+          - name: product_id
+            tests: 
+              - not_null
+
+          - name: quantity
+            tests: 
+              - not_null
+
+          - name: unit_price
+
+          - name: total_amount
+
+      - name: raw_stores
+        description: "Lojas cadastradas no erp"
+        columns:
+          - name: store_id 
+            tests: 
+              - unique
+              - not_null
+            
+          - name: store_name
+
+          - name: city 
+
+          - name: state 
+
+          - name: opened_at
+
+      - name: raw_inventory_snapshot
+        description: "Momento"
+        columns: 
+          - name: snapshot_date
+            tests: 
+              - not_null
+          
+          - name: store_id
+            tests: 
+              - not_null
+
+          - name: product_id
+            tests: 
+              - not_null
+
+          - name: stock_quantity
+

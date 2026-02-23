@@ -1,0 +1,33 @@
+version: 2
+
+models: 
+  - name: stg_products
+    description: "Produtos do ERP após padronização técnica.
+                  modelo de Staging responsável por normalizar
+                  nomes de colunas, tipos e timestamps"
+    columns:
+      - name: product_id
+        description: "Identificador único do produto"
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        description: "Nome do produto conforme cadastro no ERP"
+        tests:
+          - not_null
+
+      - name: category_name
+        description: "Categoria principal do produto"
+
+      - name: brand_name
+        description: "Marca do produto"
+
+      - name: unit_cost
+        description: "Custo unitário do produto para o varejista"
+
+      - name: unit_price
+        description: "Preço unitário de venda do produto"
+
+      - name: product_created_at
+        description: "Data de criação do registro do produto"
